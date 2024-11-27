@@ -2,7 +2,7 @@
 //  CompaniesApp.swift
 //  Companies
 //
-//  Created by ETAY LUZ - Vendor on 11/26/24.
+//  Created by ETAY LUZ on 11/26/24.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct CompaniesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CompanyListView()
         }
     }
 }

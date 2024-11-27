@@ -1,0 +1,64 @@
+# User-specific files
+*.xcuserdata
+*.xcuserstate
+
+# Build files
+DerivedData/
+build/
+
+# Logs
+*.log
+*.xcactivitylog
+
+# Dependency management
+Pods/
+Carthage/
+*.resolved
+Package.resolved
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Temporary files and local settings
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+.profile
+*.idea
+*.vscode/
+
+# Xcode automatically generated schemes
+xcshareddata/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Firebase
+GoogleService-Info.plist
+
+# Environment variables
+.env
+
+# Code coverage
+*.gcda
+*.gcno
+*.gcda.*
+*.profraw
+
+# Bundler
+.bundle/
+
+# CocoaPods Keys
+*.keys/
+
+# Other metadata
+*.metadata

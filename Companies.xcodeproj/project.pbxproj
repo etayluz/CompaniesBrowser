@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		052332CE2CF69B1C00718E6A /* CompaniesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332CD2CF69B1C00718E6A /* CompaniesApp.swift */; };
-		052332D02CF69B1C00718E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332CF2CF69B1C00718E6A /* ContentView.swift */; };
 		052332D22CF69B1E00718E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052332D12CF69B1E00718E6A /* Assets.xcassets */; };
 		052332D52CF69B1E00718E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052332D42CF69B1E00718E6A /* Preview Assets.xcassets */; };
+		052332E02CF69BFE00718E6A /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332DF2CF69BFE00718E6A /* CompanyModel.swift */; };
+		052332E22CF69C2000718E6A /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332E12CF69C2000718E6A /* CompanyService.swift */; };
+		052332E42CF69C4C00718E6A /* CompanyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332E32CF69C4C00718E6A /* CompanyDetailView.swift */; };
+		052332E82CF69E9800718E6A /* CompanyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332E72CF69E9800718E6A /* CompanyListView.swift */; };
+		052332EC2CF6A0FA00718E6A /* CompaniesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332EB2CF6A0FA00718E6A /* CompaniesViewModel.swift */; };
+		052332EE2CF6B33300718E6A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052332ED2CF6B33300718E6A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		052332CA2CF69B1C00718E6A /* Companies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Companies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		052332CD2CF69B1C00718E6A /* CompaniesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesApp.swift; sourceTree = "<group>"; };
-		052332CF2CF69B1C00718E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		052332D12CF69B1E00718E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		052332D42CF69B1E00718E6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		052332DF2CF69BFE00718E6A /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		052332E12CF69C2000718E6A /* CompanyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
+		052332E32CF69C4C00718E6A /* CompanyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailView.swift; sourceTree = "<group>"; };
+		052332E72CF69E9800718E6A /* CompanyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListView.swift; sourceTree = "<group>"; };
+		052332EB2CF6A0FA00718E6A /* CompaniesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesViewModel.swift; sourceTree = "<group>"; };
+		052332ED2CF6B33300718E6A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		052332CC2CF69B1C00718E6A /* Companies */ = {
 			isa = PBXGroup;
 			children = (
+				052332DE2CF69BEB00718E6A /* Services */,
+				052332DD2CF69BDF00718E6A /* ViewModels */,
+				052332DC2CF69BDA00718E6A /* Views */,
+				052332DB2CF69BD100718E6A /* Models */,
 				052332CD2CF69B1C00718E6A /* CompaniesApp.swift */,
-				052332CF2CF69B1C00718E6A /* ContentView.swift */,
 				052332D12CF69B1E00718E6A /* Assets.xcassets */,
 				052332D32CF69B1E00718E6A /* Preview Content */,
 			);
@@ -65,6 +78,40 @@
 				052332D42CF69B1E00718E6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		052332DB2CF69BD100718E6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				052332DF2CF69BFE00718E6A /* CompanyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		052332DC2CF69BDA00718E6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				052332E32CF69C4C00718E6A /* CompanyDetailView.swift */,
+				052332E72CF69E9800718E6A /* CompanyListView.swift */,
+				052332ED2CF6B33300718E6A /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		052332DD2CF69BDF00718E6A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				052332EB2CF6A0FA00718E6A /* CompaniesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		052332DE2CF69BEB00718E6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				052332E12CF69C2000718E6A /* CompanyService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				052332D02CF69B1C00718E6A /* ContentView.swift in Sources */,
 				052332CE2CF69B1C00718E6A /* CompaniesApp.swift in Sources */,
+				052332E02CF69BFE00718E6A /* CompanyModel.swift in Sources */,
+				052332EE2CF6B33300718E6A /* SettingsView.swift in Sources */,
+				052332E82CF69E9800718E6A /* CompanyListView.swift in Sources */,
+				052332E42CF69C4C00718E6A /* CompanyDetailView.swift in Sources */,
+				052332EC2CF6A0FA00718E6A /* CompaniesViewModel.swift in Sources */,
+				052332E22CF69C2000718E6A /* CompanyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companies/Preview Content\"";
+				DEVELOPMENT_TEAM = 9J2FSAJA8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companies/Preview Content\"";
+				DEVELOPMENT_TEAM = 9J2FSAJA8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
